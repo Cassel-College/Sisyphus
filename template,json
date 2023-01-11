@@ -13,5 +13,12 @@
             "github_url": "",
             "git_url": ""
         }
+    },
+    "python-package": {
+        "name": {
+            "package_name": "",
+            "version": "",
+            "python_version": ""
+        }
     }
 }
