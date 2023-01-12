@@ -1,0 +1,48 @@
+{
+    "OS": "mac",
+    "soft": {
+        "git": {
+            "name": "git",
+            "version": "3.20"
+        },
+        "g++": {
+            "name": "g++",
+            "version": "3.20"
+        },
+        "gcc": {
+            "name": "gcc",
+            "version": "3.20"
+        },
+        "make": {
+            "name": "make",
+            "version": "3.20"
+        },
+        "cmake": {
+            "name": "cmake",
+            "version": "3.20"
+        },
+        "python3": {
+            "name": "python3",
+            "version": "3.20"
+        },
+        "rust": {
+            "name": "python3",
+            "version": "3.20"
+        }
+    },
+    "code": {
+        "name": {
+            "lpath": "/home",
+            "barch": "master",
+            "github_url": "",
+            "git_url": ""
+        }
+    },
+    "python-package": {
+        "name": {
+            "package_name": "",
+            "version": "",
+            "python_version": ""
+        }
+    }
+}
