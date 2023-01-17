@@ -1,5 +1,6 @@
+from model.log.v1.log_model import LogModel
 
 
-def print_log(log: str, level: str):
+def print_log(log: LogModel):
     
-    print(log)
+    print()
