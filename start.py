@@ -1,13 +1,26 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
 
 from frame.log.log4py import print_log
+from tools.file_box.v1.file_box import FileBox
+from tools.json_box.v1.json_box import JsonBox
 
 def start():
     
-    print("k")
     print_log(log="开始执行", level="DEBUG")
     
     print_log(log="开始读取策略文件", level="DEBUG")
-    
+    file_path = './template.json'
+    info = FileBox.read(file_path=file_path)
+    json_box = JsonBox(json_string=info)
+    temp = json_box.get_all()
+    print(type(temp))
+    print(temp)
+    softs = json_box.get_value("soft")
+    for item in softs.keys():
+        soft = softs.get(item)
+        print(soft)
+        
     print_log(log="开始探测环境", level="DEBUG")
     
     print_log(log="检测包管理软件是否安装？", level="DEBUG")

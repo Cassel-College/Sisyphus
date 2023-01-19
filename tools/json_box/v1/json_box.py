@@ -11,5 +11,9 @@ class JsonBox:
     def set_value(self, key, value):
         self.json_data[key] = value
 
-    def to_string(self):
+    def to_string(self) -> str:
         return json.dumps(self.json_data)
+    
+    def get_all(self) -> dict:
+        
+        return self.json_data
