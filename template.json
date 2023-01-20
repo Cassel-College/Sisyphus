@@ -1,33 +1,56 @@
 {
     "OS": "mac",
     "soft": {
-        "git": {
-            "name": "git",
-            "version": "3.20"
-        },
-        "g++": {
-            "name": "g++",
-            "version": "3.20"
-        },
-        "gcc": {
-            "name": "gcc",
-            "version": "3.20"
-        },
-        "make": {
-            "name": "make",
-            "version": "3.20"
-        },
-        "cmake": {
-            "name": "cmake",
-            "version": "3.20"
-        },
-        "python3": {
-            "name": "python3",
-            "version": "3.20"
-        },
-        "rust": {
-            "name": "python3",
-            "version": "3.20"
+        "install": {
+            "brew": {
+                "name": "brew",
+                "version": "",
+                "drive": "shell",
+                "shell": "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+            },
+            "git": {
+                "name": "git",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "g++": {
+                
+                "name": "g++",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "gcc": {
+                "name": "gcc",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "make": {
+                "name": "make",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "cmake": {
+                "name": "cmake",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "python3": {
+                "name": "python3",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            },
+            "rust": {
+                "name": "python3",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            }
         }
     },
     "code": {
