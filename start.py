@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 from frame.log.log4py import print_log
+from model.soft.v1.soft_factory import create_soft
 from tools.file_box.v1.file_box import FileBox
 from tools.json_box.v1.json_box import JsonBox
 
@@ -20,6 +21,8 @@ def start():
     for item in softs.keys():
         soft = softs.get(item)
         print(soft)
+        a = create_soft(name=soft.get("name"), version=soft.get("version"))
+        a.show()
         
     print_log(log="开始探测环境", level="DEBUG")
     
