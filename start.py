@@ -10,23 +10,7 @@ from tools.json_box.v1.json_box import JsonBox
 from tools.shell_box.v1.shell_tool import ShellTool
 
 
-def start():
-    
-    q = ShellTool.run(cmd="pwd", stderr=True)
-    a = ShellTool.run(cmd="cat /home/l.txt", stderr=True)
-    z = ShellTool.run(cmd="cat /home/l.txt", stderr=False)
-    print(q)
-    print(a)
-    print(z)
-    print_log(log="开始执行", level="DEBUG")
-    
-    print_log(log="开始读取策略文件", level="DEBUG")
-    file_path = './template.json'
-    info = FileBox.read(file_path=file_path)
-    json_box = JsonBox(json_string=info)
-
-    softs = json_box.get_value("soft")
-    install_softs = softs.get("install")
+def do_install(install_softs: dict):
     for item in install_softs.keys():
         soft = install_softs.get(item)
         print(soft)
@@ -35,6 +19,21 @@ def start():
         a.show()
         if not has_install(soft=a):
             install_soft(soft=a)
+
+def start():
+
+    print_log(log="开始执行", level="DEBUG")
+    print_log(log="开始加载配置文件", level="DEBUG")
+    config_path = "./config/config.json"
+    
+    print_log(log="开始读取策略文件", level="DEBUG")
+    file_path = './template.json'
+    info = FileBox.read(file_path=file_path)
+    json_box = JsonBox(json_string=info)
+
+    softs = json_box.get_value("soft")
+    install_softs = softs.get("install")
+    do_install(install_softs=install_softs)
         
     print_log(log="开始探测环境", level="DEBUG")
     
