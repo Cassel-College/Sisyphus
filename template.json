@@ -1,7 +1,23 @@
 {
     "OS": "mac",
     "soft": {
+        "uninstall": {
+            "g++": {
+                "name": "g++",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            }
+        },
         "install": {
+            "g++": {
+                "name": "g++",
+                "version": "3.20",
+                "drive": "default",
+                "shell": ""
+            }
+        },
+        "xinstall": {
             "brew": {
                 "name": "brew",
                 "version": "",
@@ -15,7 +31,6 @@
                 "shell": ""
             },
             "g++": {
-                
                 "name": "g++",
                 "version": "3.20",
                 "drive": "default",

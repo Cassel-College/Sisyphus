@@ -22,4 +22,6 @@ def uninstall_soft(soft: SoftModel) -> str:
     shell_tool = ShellTool()
     a = shell_tool.run(cmd=shell)
     print(a)
-    return a  
+    return a
+
+  
