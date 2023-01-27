@@ -70,10 +70,11 @@
     },
     "code": {
         "name": {
-            "lpath": "/home",
+            "local_path": "/home",
             "barch": "master",
             "github_url": "",
-            "git_url": ""
+            "git_url": "",
+            "source": "github"
         }
     },
     "python-package": {
