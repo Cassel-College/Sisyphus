@@ -33,3 +33,4 @@ def check_folder_path_existed(folder_path: str) -> bool:
     else:
         print_log(log="Folder not existed.", level="INFO")
     return folder_path_existed
+
