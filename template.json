@@ -69,11 +69,46 @@
         }
     },
     "code": {
-        "name": {
-            "local_path": "/home",
-            "barch": "master",
-            "github_url": "",
-            "git_url": "",
+        "LeetCode": {
+            "local_path": "/home/Code/github",
+            "project_name": "LeetCode",
+            "branch": "master",
+            "github_url": "https://github.com/liupengzhouyi/LeetCode.git",
+            "git_url": "https://github.com/liupengzhouyi/LeetCode.git",
+            "source": "github"
+        },
+        "cassel-college.github.io": {
+            "local_path": "/home/Code/github",
+            "project_name": "cassel-college.github.io",
+            "branch": "master",
+            "github_url": "https://github.com/liupengzhouyi/cassel-college.github.io.git",
+            "git_url": "https://github.com/liupengzhouyi/cassel-college.github.io.git",
+            "source": "github"
+        },
+        "mongoliacavalry.github.io.git": {
+            "local_path": "/home/Code/github",
+            "project_name": "mongoliacavalry.github.io.git",
+            "branch": "master",
+            "github_url": "https://github.com/liupengzhouyi/mongoliacavalry.github.io.git",
+            "git_url": "https://github.com/liupengzhouyi/mongoliacavalry.github.io.git",
+            "source": "github"
+        },
+        "Math": {
+            "local_path": "/home/Code/github",
+            "project_name": "Math",
+            "branch": "master",
+            "github_url": "https://github.com/liupengzhouyi/Math.git",
+            "git_url": "https://github.com/liupengzhouyi/Math.git",
+            "source": "github"
+        }
+    },
+    "remove_code": {
+        "LeetCode": {
+            "local_path": "/home/Code/github",
+            "project_name": "LeetCode",
+            "branch": "master",
+            "github_url": "https://github.com/liupengzhouyi/LeetCode.git",
+            "git_url": "https://github.com/liupengzhouyi/LeetCode.git",
             "source": "github"
         }
     },

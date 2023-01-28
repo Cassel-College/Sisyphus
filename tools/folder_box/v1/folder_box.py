@@ -34,3 +34,9 @@ def check_folder_path_existed(folder_path: str) -> bool:
         print_log(log="Folder not existed.", level="INFO")
     return folder_path_existed
 
+
+def check_folder_empty(folder_path: str) -> bool:
+            
+    print_log(log=f"Check folder empty?", level="ERROR")
+    
+    return True
