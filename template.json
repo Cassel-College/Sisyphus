@@ -113,10 +113,25 @@
         }
     },
     "python-package": {
-        "name": {
-            "package_name": "",
-            "version": "",
-            "python_version": ""
+        "pip3": {
+            "torch": {
+                "package_name": "torch",
+                "version": "",
+                "python_version": ""
+            },
+            "torchvision": {
+                "package_name": "torchvision",
+                "version": "",
+                "python_version": ""
+            },
+            "torchaudio": {
+                "package_name": "torchaudio",
+                "version": "",
+                "python_version": ""
+            }
+        },
+        "conda": {
+
         }
     }
 }
