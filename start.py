@@ -12,6 +12,9 @@ from model.soft.v1.soft_factory import create_soft_by_dict
 from tools.file_box.v1.file_box import FileBox
 from tools.json_box.v1.json_box import JsonBox
 
+from tools.json_box.v1.oper_json import pp
+
+pp()
 
 def do_install(install_softs: dict) -> list:
     
