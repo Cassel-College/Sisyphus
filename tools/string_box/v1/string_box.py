@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
-from frame.log.log4py import print_log
+# from frame.log.log4py import print_log
 
 
 def line(info: str, length: int=120) -> str:

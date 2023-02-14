@@ -32,15 +32,16 @@ def do_install(install_softs: dict) -> list:
 def do_clone(clone_codes: dict) -> list:
     
     print_log(log="开始clone code.", level="ERROR")
+    clone_success_list = []
     for item in clone_codes.keys():
+        clone_success = False
         code_clone_info = clone_codes.get(item)
         if not isinstance(code_clone_info, dict):
             continue
-        print(code_clone_info.get("source"))
         if code_clone_info.get("source") == "github":
-            print("000")
-            clone_code_from_github(info=code_clone_info)
-    pass
+            clone_success = clone_code_from_github(info=code_clone_info)
+        clone_success_list.append(clone_success)
+    return clone_success_list
     
 
 def start():

@@ -6,7 +6,7 @@ from frame.log.log4py import print_log
 
 def add(obj1, obj2):
     
-    print_log()
+    print_log(log="", level="DEBUG")
     return obj1 + obj2
 
 
@@ -14,7 +14,7 @@ def diff(obj1, obj2):
     
     pass
 
-
+    
 def old(obj1, obj2):
     
     return obj1
